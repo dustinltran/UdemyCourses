@@ -11,11 +11,10 @@ class WeatherList extends Component {
 		const pressure = cityData.list.map(weather => weather.main.pressure);
 		const humidity = cityData.list.map(weather => weather.main.humidity);
 		const {lon, lat} = cityData.city.coord;
-
-
+		console.log({lon});
 		return(
 			<tr key={cityData.city.name}>
-				<td><GoogleMap /></td>
+				<td><GoogleMap lon={lon} lat={lat} /></td>
 				<td>
 					<Chart data={temps} color="orange" units="K" />
 				</td>
