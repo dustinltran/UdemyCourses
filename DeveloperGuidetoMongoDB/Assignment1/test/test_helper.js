@@ -8,7 +8,7 @@ mongoose.connection
 	});
 
 
-beforeEach(() => {
+beforeEach((done) => {
 	mongoose.connection.collections.users.drop(() => {
 		done();
 	});
