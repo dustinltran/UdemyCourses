@@ -48,6 +48,11 @@ describe('Updating Records', () => {
 			done
 		);
 	});
+
+	it('A user can have their postcount incremented by 1', () => {
+		User.update({name: Joe}, {postCount: 1});
+		
+	});
 });
 
 // function maybeUpdateName(user) {
