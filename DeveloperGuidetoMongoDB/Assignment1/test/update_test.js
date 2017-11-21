@@ -54,8 +54,9 @@ describe('Updating Records', () => {
 		User.update({ name: 'Joe'}, { $inc: {postCount:1}})
 			.then(() => User.findOne( {name: 'Joe' }))
 			.then(() => {
-				assert(user.postCount === 1);
-			})
+				assert(user.postCount === 10);
+				done();
+			});
 	});
 });
 
