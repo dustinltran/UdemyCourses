@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RestfulWebServicesApplication",
+            "request": "launch",
+            "mainClass": "com.udemy.rest.web.restfulwebservices.RestfulWebServicesApplication",
+            "projectName": "restful-web-services"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DemoApplication",
             "request": "launch",
             "mainClass": "com.udemy.rest.web.restfulwebservices.DemoApplication",
